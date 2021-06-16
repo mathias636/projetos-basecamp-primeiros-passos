@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 char *ft_strcpy(char *dest, char *src)
 {
@@ -17,8 +18,14 @@ char *ft_strcpy(char *dest, char *src)
 int	main(void)
 {
 	char	vetor[6] = {'q', 'w', 'e', 'r', 't', 'y'};
-	int		result;
-	result = *ft_strcpy(vetor);
-	printf("%d\n", result);
+	char	dest[] = "";
+	// int		result;
+
+	printf("O vetor era assim: %s\n", vetor);
+	printf("O dest era assim: %s\n", dest);
+	// result = 
+	ft_strcpy(dest, vetor);
+	printf("O vetor FICOU assim: %s\n", vetor);
+	printf("O dest FICOU assim: %s\n", dest);
 	return (0);
 }

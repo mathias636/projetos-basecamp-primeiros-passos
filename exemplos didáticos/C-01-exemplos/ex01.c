@@ -29,8 +29,9 @@ int	main(void)
 	raimunda = &malaquias;
 	
 	printf("este é o número antes de ir para ft_ultimate: %i\n", root);
-	ft_ultimate(raimunda);
-	printf("este é o número depois de passar pela ft_ultimate%i\n", root);
+	ft_ultimate(&malaquias);
+	printf("este é o número depois de passar pela ft_ultimate %i\n", root);
+	printf("este é o número depois de passar pela ft_ultimate na main %i\n", root);
 
 	return(0);
 }

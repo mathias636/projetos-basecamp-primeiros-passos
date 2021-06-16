@@ -16,15 +16,15 @@ int main(void)
 	int a;
 	int b;
 	int *robert;
-	int *hebert;
+	int *julius;
 
 	a = 14;
 	b = 2;
 	robert = &a;
-	hebert = &b;
+	julius = &b;
 
 	printf("então a = %i e b = %i\n", a, b);
-	ft_ultimate_div_mod(robert, hebert);
+	ft_ultimate_div_mod(&robert, &julius);
 	printf("a / b = %i\n", a);
 	printf("a mod b = %i\n", b);
 }
