@@ -8,7 +8,7 @@ void	print(int A, int B, int C, int D)
 	write(1, &C, 1);
 	write(1, &D, 1);
 	if (A < '9' && B < '9')
-		write(1, "| ", 2);
+		write(1, ", ", 2);
 }
 
 void	ft_print_comb2(void)

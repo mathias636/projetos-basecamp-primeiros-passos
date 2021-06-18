@@ -1,17 +1,17 @@
-char *ft_strcpy(char *dest, char *src, unsigned int n)
+char	*ft_strncpy(char *dest, char *scr, unsigned int n)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
-	while(src[i] != '\0' && i < n)
+	while (scr[i] && i < n)
 	{
+		dest[i] = scr[i];
 		i++;
 	}
-	return i;
-}
-
-int main(void)
-{
-	char srting[5]  = "blue"
-	return (0);
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
