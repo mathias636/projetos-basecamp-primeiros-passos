@@ -14,9 +14,7 @@ char 	*ft_strcapitalize(char *str)
 		}
 		else if ((str[i] >= 'A' && str[i] <= 'Z') && cap == 0)
 			cap = 1;
-		else if ((str[i] >= 'a' && str[i] <= 'z') && cap == 1)
-			cap = 1;
-		else if ((str[i] >= 'A' && str[i] <= 'z') && cap == 1)
+		else if ((str[i] >= 'A' && str[i] <= 'Z') && cap == 1)
 			str[i] = (str[i] + 32);
 		else if (str[i] >= '0' && str[i] <= '9')
 			cap = 1;
